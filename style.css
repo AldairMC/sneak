@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 15px 0 10px;
     padding: 0;
     font-family: Tahoma;
 }
@@ -74,8 +74,53 @@
 .content p{
     text-align: justify;
 }
+
+.container_hero {
+    display: grid;
+    height: 600px;
+    width: 100%;
+    background-color: #fc758c;
+}
+
+.hero {
+    justify-self: center;
+    align-self: center;
+}
+
+.hero_title {
+    color: white;
+    letter-spacing: 10px;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.hero_description {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.hero_button_container {
+    padding-top: 50px;
+    display: grid;
+}
+
+.hero_button {
+    justify-self: center;
+    width: 25%;
+    background-color: white;
+    color: rgba(252, 117, 140, 0.5);
+    border: none;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px 15px 10px 15px;
+}
   
 @media screen and (max-width:800px) {
+
+    * {
+        margin: 0;
+    }
 
     .show-menu-btn,.hide-menu-btn{
         display: block;
@@ -108,4 +153,13 @@
     #chk:checked ~ .menu{
         right: 0;
     }
+
+    .hero_title {
+        text-align: center;
+    }
+
+    .hero_button {
+        width: 40%;
+    }
+
 }
