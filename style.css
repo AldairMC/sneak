@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0 15px 0 10px;
     padding: 0;
     font-family: Tahoma;
@@ -115,10 +115,23 @@
     font-size: 10px;
     padding: 10px 15px 10px 15px;
 }
+
+.container_icon {
+    display: grid;
+    height: 100px;
+}
+
+.icons {
+    letter-spacing: 10px;
+    justify-self: center;
+    align-self: center;
+    color: #fc758c;
+    cursor: pointer;
+}
   
 @media screen and (max-width:800px) {
 
-    * {
+    body {
         margin: 0;
     }
 
